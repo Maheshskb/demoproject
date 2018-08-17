@@ -1,0 +1,112 @@
+
+
+<h3 style="text-align: center;margin-top: -29px;text-align:center;font-size:35px;color:#000;font-family:\22Courier New\22,serif;font-weight:bold;">Bearing Predictive Maintenance Analysis</h3>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card" style="background-color:#fff;-webkit-border-radius:7px;border-radius:7px;margin:0px;height:370px; box-shadow:rgb(0, 0, 0) -03px 0px 4px ">
+            
+                <br>
+                <h3 style="text-align: center;margin-top: -9px;text-align:center;font-size:25px;color:#000;"> Over All Health Status</h3>
+                <div style="width: 100%;margin-left: 00px;">
+                    <canvas
+                        baseChart
+                        [chartType]="'pie'"
+                        [datasets]="chartData"
+                        [labels]="chartLabels"
+                        [options]="chartOptions"
+                        [legend]="true"
+                        (chartClick)="onChartClick($event)">
+                    </canvas>
+                 
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card" style="background-color:#fff;-webkit-border-radius:7px;border-radius:7px;margin:0px;height:370px; box-shadow:rgb(0, 0, 0) -03px 0px 4px ">
+            <div class="card-body">
+                <div class="styled-select black rounded">
+                    <select style="padding-bottom: 5px;padding-top: 5px;margin-left: 370px;padding-left: 35px;">
+                      <option value="">State</option>
+                      <option>Maharashtra</option>
+                      <option>Karnataka</option>
+                    </select>
+                  </div>
+                  <h3 style="text-align: center;margin-top: -29px;text-align:center;font-size:25px;color:#000;"> State Wise</h3>
+                  <div style="width: 100%;margin-left: 00px;">
+                    <canvas
+                        baseChart
+                        [chartType]="'bar'"
+                        [datasets]="chartData1"
+                        [labels]="chartLabels1"
+                        [options]="chartOptions"
+                        [legend]="true"
+                        [colors]="myColors"
+                        (chartClick)="onChartClick($event)">
+                    </canvas>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="col-md-6" style="margin:44px 0px 0px;">
+        <div class="card" style="background-color:#fff;-webkit-border-radius:7px;border-radius:7px;margin:0px;height:370px; box-shadow:rgb(0, 0, 0) -03px 0px 4px ">
+            <div class="card-body">
+                <h3 style="text-align: center;margin-top: 0px;text-align:center;font-size:25px;color:#000;"> Plant Map</h3>
+
+                <!-- <div class="styled-select black rounded">
+                    <select style="padding-bottom: 5px;padding-top: 5px;margin-left: 400px;padding-left: 50px;">
+                      <option value="">City</option>
+                      <option>Mumbai</option>
+                      <option>Pune</option>
+                      <option>Nagpur</option>
+                    </select>
+                  </div> -->
+                  
+                  <div style="width: 100%;margin-left: 00px;">
+                      <!-- <canvas
+                        baseChart
+                        [chartType]="'GeoChart'"
+                        [datasets]="chartData3"
+                        [labels]="chartLabels3"
+                        [options]="chartOptions"
+                        [legend]="true"
+                        [colors]="myColors"
+                        (chartClick)="onChartClick($event)">
+                    </canvas>   -->
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6" style="margin:44px 0px 0px;">
+        <div class="card" style="background-color:#fff;-webkit-border-radius:7px;border-radius:7px;margin:0px;height:370px; box-shadow:rgb(0, 0, 0) -03px 0px 4px ">
+            <div class="card-body">
+                <div class="styled-select black rounded">
+                    <select style="padding-bottom: 5px;padding-top: 5px;margin-left: 400px;padding-left: 25px;">
+                      <option value="">City</option>
+                      <option>Mumbai</option>
+                      <option>Pune</option>
+                      <option>Nagpur</option>
+                    </select>
+                  </div>
+                  <h3 style="text-align: center;margin-top: -29px;text-align:center;font-size:25px;color:#000;"> Plant Wise</h3>
+
+                  <div style="width: 100%;margin-left: 0px;">
+                    <canvas
+                        baseChart
+                        [chartType]="'line'"
+                        [datasets]="chartData2"
+                        [labels]="chartLabels2"
+                        [options]="chartOptions"
+                        [legend]="true"
+                        [colors]="myColors2"
+                        (chartClick)="onChartClick($event)">
+                    </canvas>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

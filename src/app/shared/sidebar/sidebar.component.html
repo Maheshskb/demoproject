@@ -1,0 +1,59 @@
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div class="scroll-sidebar">
+        <!-- User profile -->
+        <div class="user-profile">
+            <!-- User profile image -->
+            <div class="profile-img"> <img src="assets/images/users/1.jpg" alt="user" /> </div>
+            <!-- User profile text-->
+            <div class="profile-text"> <a href="#" class="dropdown-toggle link u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">User Name <span class="caret"></span></a>
+                <div class="dropdown-menu animated flipInY">
+                    <a href="#" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+
+                    <div class="dropdown-divider"></div> <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+        <!-- End User profile text-->
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+                <li class="nav-devider"></li>
+                
+              
+                <li [class.active]="showMenu === 'component'">
+                    <a class="has-arrow" href="javascript:void(0)" (click)="addExpandClass('component')" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span class="hide-menu"><b style="font-size: 15px;">Menu</b></span></a>
+                    <ul aria-expanded="false" class="collapse" [class.in]="showMenu === 'component'">
+                        <li><a routerLink="/component/accordion" [routerLinkActive]="['router-link-active']"><b style="font-size: 15px;">Executive Dashboard</b></a></li>
+                        <li><a routerLink="/component/pagination" [routerLinkActive]="['router-link-active']"><b style="font-size: 15px;">Overall Health</b></a></li>
+                        <li><a routerLink="/component/alert" [routerLinkActive]="['router-link-active']"><b style="font-size: 15px;">Add Client</b></a></li>
+                        <li><a routerLink="/component/carousel" [routerLinkActive]="['router-link-active']"><b style="font-size: 15px;">Add Machine</b></a></li>
+                        <li><a routerLink="/component/dropdown" [routerLinkActive]="['router-link-active']"><b style="font-size: 15px;">User Access</b></a></li>
+                        <li><a routerLink="/component/modal" [routerLinkActive]="['router-link-active']"><b style="font-size: 15px;">Setting </b></a></li>
+                        <!-- <li><a routerLink="/component/progressbar" [routerLinkActive]="['router-link-active']">Button </a></li>
+                         -->
+                        <li><a routerLink="/component/poptool" [routerLinkActive]="['router-link-active']"><b style="font-size: 15px;">Logout</b></a></li>
+                        <!-- <li><a routerLink="/component/progressbar" [routerLinkActive]="['router-link-active']">Progressbar</a></li>
+                        <li><a routerLink="/component/rating" [routerLinkActive]="['router-link-active']">Ratings</a></li>
+                        <li><a routerLink="/component/tabs" [routerLinkActive]="['router-link-active']">Tabs</a></li>
+                        <li><a routerLink="/component/timepicker" [routerLinkActive]="['router-link-active']">Timepicker</a></li>
+                        <li><a routerLink="/component/buttons" [routerLinkActive]="['router-link-active']">Button</a></li>
+                        <li><a routerLink="/component/cards" [routerLinkActive]="['router-link-active']">Card</a></li> -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+    <!-- Bottom points-->
+    <div class="sidebar-footer">
+        <!-- item-->
+        <!--<a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>-->
+        <!--&lt;!&ndash; item&ndash;&gt;-->
+        <!--<a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>-->
+        <!--&lt;!&ndash; item&ndash;&gt;-->
+        <!--<a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>-->
+    </div>
+    <!-- End Bottom points-->
+</aside>
